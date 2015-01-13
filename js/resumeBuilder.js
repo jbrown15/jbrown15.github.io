@@ -47,7 +47,7 @@ var projects = {
 		{
 			"title": "i-Robot Random Walk Simulation",
 			"dates": "2014",
-			"Description": "In this problem set, I coded a simulation to compare how much time a group of Roomba-like robots will take to clean the floor of a room using two different strategies. One of the strategies used was the random walk.  The two strategies will compared and analyzed by simulating varying number of robots cleaning varying sizes of rooms over 200 trials.",
+			"Description": "In this problem set, I coded a simulation to compare how much time a group of Roomba-like robots will take to clean the floor of a room using two different strategies. One of the strategies used was the random walk strategy and the other, a robot does not change direction until it hits a wall.  The two strategies will compared and analyzed by simulating varying number of robots cleaning varying sizes of rooms over 200 trials.",
 			"images": [
 			"images/iRobot.png",
 			"images/figure_1.png"
