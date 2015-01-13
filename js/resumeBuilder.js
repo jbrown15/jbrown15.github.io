@@ -125,8 +125,8 @@ var professional = {
 		{
 			"organization": "Casualty Actuarial Society",
 			"exams": ["Exam P", "Exam FM"],
-			"exam1": "Examp P (Probability)",
-			"exam2": "Examp FM (Financial Mathematics)"
+			"exam1": "Exam P (Probability)",
+			"exam2": "Exam FM (Financial Mathematics)"
 		}
 	
 }
