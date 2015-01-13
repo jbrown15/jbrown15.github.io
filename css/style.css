@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry, .project-entry,.professional-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -40,7 +40,9 @@ h4 {
   font-size: 14px;
   color: #4A4A4A;
   line-height: 17px;
+   //padding-left: 5.05%;
 }
+
 h6 {
 	 font-weight: bold;
      font-size: 14px;
@@ -51,7 +53,7 @@ h6 {
 	
 }
 
-h2, h3, h4, h5 {
+h2, h3, h5 {
   padding:10px;
   padding-left: 5%;
   padding-right: 5%;

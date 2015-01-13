@@ -47,7 +47,7 @@ var HTMLonlineDates = '<div id="date-text" class = "grey">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var HTMLprof = '<div class="professional-entry"></div>';
-var HTMLorgName = '<h3><a href="#">%data%</a></h3>';
+var HTMLorgName = '<a href="#">%data%</a>';
 //var HTMLtype = ' - %data%</a>';
 //var HTMLExam = '<em><br>Exam: %data%</em>';
 var HTMLExam1 = '<h4><em> %data%</em></h4>';
