@@ -15,7 +15,7 @@ var bio = {
 	"skills": [
 		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++,Python,R, and VBA", "MS-SQL","GIS", "VCS:Git"
 	],
-	"bioPic" : "C:/Users/TheFifthHorseMan/Desktop/data_sci/Resume/frontend-nanodegree-resume/images/Aquarius.jpg"
+	"bioPic" : "images/binary.gif"
 }
 
 
