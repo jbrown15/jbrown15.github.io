@@ -9,7 +9,7 @@ var bio = {
 		
 		"email" : "jabrown10@mail.usf.edu",
 		"github" : "jbrown15",
-		"location" : "Tampa"
+		"location" : "Atlanta"
 	},
 	"welcomeMessage" : "",
 	"skills": [
