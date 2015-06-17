@@ -4,16 +4,16 @@
 var bio = {
 	
 	"name" : "Jonathan Alexander Brown",
-	"role" : "Catastrophe Model Developer",
+	"role" : "Risk Consultant",
 	"contacts" : {
-		//"mobile" : "321-806-7909",
+		
 		"email" : "jabrown10@mail.usf.edu",
 		"github" : "jbrown15",
 		"location" : "Tampa"
 	},
 	"welcomeMessage" : "",
 	"skills": [
-		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++,Python,R, and VBA", "MS-SQL","GIS", "VCS:Git"
+		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++/C#,Python,R, and VBA", "MS-SQL","GIS", "VCS:Git", "Full Stack Development(.Net and Django)", "Reinsurance Pricing","Catastrophe Modeling (RMS,AIR, and RQE)"
 	],
 	"bioPic" : "images/binary.gif"
 }
@@ -25,9 +25,15 @@ var bio = {
 var work = {
 	"jobs": [
 		{
+			"employer": "Tokio Marine Technologies",
+			"title": "Lead Risk Analyst Consultant",
+			"dates": "February 2015 - Present",
+			"description": "As an internal consultant to the primary and reinsurance subsidiaries under the Tokio Marine Group, I perform the following tasks:  Assist in the management of portfolio risk,  contract pricing, capital allocation and risk roll up using catastrophe risk assessment models and proprietary re/insurance applications. Validate commercial catastrophe models by testing,  benchmarking, and assess their conceptual soundness. ·Conduct risk analysis using catastrophe risk modeling software (AIR,  EQE,  RMS), including data preparation  and incorporation into catastrophe modeling process, querying databases and preparing reports. Conduct analytical and research studies and apply knowledge of probability and statistics to develop practical solutions to quantify catastrophe risk and enhance the use of catastrophe models.  Serve as a subject matter experts and resource for catastrophe risk modeling and management initiatives with demonstrated ability to convey principles to non-technical audiences."
+		},
+		{
 			"employer": "Guy Carpenter",
 			"title": "Catastrophe Risk Analyst",
-			"dates": "May 2012 - Present",
+			"dates": "May 2012 - February 2015",
 			"description": "Providing catastrophe risk management and analysis using AIR,RQE/EQE, and RMS catastrophe models.  Providing risk analysis for global clients as well as clients in niche markets in geographic regions such as Florida and Latin America & Caribbean(only for perils where industry models do not exist).  Contributing to R&D predictive analytics projects for global clients."
 		},
 		{
@@ -35,7 +41,7 @@ var work = {
 			"title": "Algorithmic Programmer",
 			"dates": "May 2011 - April 2012",
 			"description": "Providing statistical analysis reports on trading strategies given by money managers and traders.  Developing trading systems in C++ or MQL4 for FX and index financial instruments. Creating tools (alert systems, trading signals, etc ...) to assist traders in managing their trading positions. Assisting with creating marketing presentations for high net worth investors.",
-			"description2": "blah balh blah"
+			//"description2": "blah balh blah"
 		}
 	]
 }
