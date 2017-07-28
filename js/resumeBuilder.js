@@ -2,14 +2,14 @@
 
 
 var bio = {
-	
+
 	"name" : "Jonathan Alexander Brown",
 	"role" : "Risk Consultant",
 	"contacts" : {
-		
+
 		"email" : "jabrown10@mail.usf.edu",
 		"github" : "jbrown15",
-		"location" : "Atlanta"
+		"location" : "New York City"
 	},
 	"welcomeMessage" : "",
 	"skills": [
@@ -19,15 +19,21 @@ var bio = {
 }
 
 
-	
+
 
 
 var work = {
 	"jobs": [
 		{
+			"employer": "Transatlantic Reinsurance Company(Headquarters)",
+			"title": "Data Analyst",
+			"dates": "September 2016 - Present",
+			"description": "The Data Analyst role entails but is not limited to: Portfolio Management of the Corporate Global Catastrophe book. Quarterly reporting on and communicating the movement of the corporate porfolio to the Chief Risk Officer and Senior Underwriting management to all branches globally.  Be responsible for making sure any purchased Retrocession is appropriately applied and accounted for in the quarterly reporting results for the portfolio. Interfacing with the Capital Markets Department on ILS products we market to investors.  liaison with IT to secure support for technology used in the Global Catastrophe Dept. Deliver analytical insight to Underwriters about their book of business. Innovate or develop tools using advanced analytics(e.g predictive analytics, machine learning, software engineering etc...) that analyst or other stakeholders can leverage."
+		},
+		{
 			"employer": "Tokio Marine Technologies",
 			"title": "Lead Risk Analyst Consultant",
-			"dates": "February 2015 - Present",
+			"dates": "February 2015 - September 2016",
 			"description": "As an internal consultant to the primary and reinsurance subsidiaries under the Tokio Marine Group, I perform the following tasks:  Assist in the management of portfolio risk,  contract pricing, capital allocation and risk roll up using catastrophe risk assessment models and proprietary re/insurance applications. Validate commercial catastrophe models by testing,  benchmarking, and assess their conceptual soundness. ·Conduct risk analysis using catastrophe risk modeling software (AIR,  EQE,  RMS), including data preparation  and incorporation into catastrophe modeling process, querying databases and preparing reports. Conduct analytical and research studies and apply knowledge of probability and statistics to develop practical solutions to quantify catastrophe risk and enhance the use of catastrophe models.  Serve as a subject matter experts and resource for catastrophe risk modeling and management initiatives with demonstrated ability to convey principles to non-technical audiences."
 		},
 		{
@@ -66,7 +72,7 @@ var projects = {
 			"Description": "In this problem set, I used Python and pylab to write a agglomerative hierarchical clustering algorithm. I used my algorithm to cluster cities across the United States according to some information available about each.  Annual precipitation, number of days of precipitation in a year, and average temperature for January, April, July, and October were the features used in this data set.  I will experiment with clusters of size 'n' and compare to the same clustering except the features will be scaled to remove feature bias.",
 			"images": [
 			"images/project.jpg"
-			
+
 			],
 			"link": "https://github.com/jbrown15/h_clustering_project"
 		},
@@ -76,15 +82,15 @@ var projects = {
 			"Description": "In this problem set you will write a solution to an optimization problem on how to find the shortest route from one building to another on the MIT campus given that you wish to constrain the amount of time you will spend walking outdoors.  In this project, I will  implement a brute force search algorithm and a depth-first search algorith and analyze the time differences.",
 			"images": [
 			"images/project.jpg"
-			
+
 			],
 			"link": "https://github.com/jbrown15/graph_opt_project"
 		}
 	]
-			
+
 }
 
-  
+
 
 var education = {
 	"schools": [
@@ -113,38 +119,44 @@ var education = {
 			"url": "http://example.com"
 		}
 	],
-	
+
 	"certificates": [
 		{
 			"title": "Data Science",
 			"school": "University of Washington",
 			"dates": 2013
 		}
-		
+
 	]
-	
+
 }
 
 
 var professional = {
-	"designation": 
+	"designation":
 		{
 			"organization": "Casualty Actuarial Society",
 			"exams": ["Exam P", "Exam FM"],
 			"exam1": "Exam P (Probability)",
 			"exam2": "Exam FM (Financial Mathematics)"
+		},
+		"Organization":
+		{
+			"organization": "University of Washington Data Science Dept",
+			"Role": "Advisory Board Member"
+
 		}
-	
+
 }
 
 
 //********************************************** BIO SECTION ***********************************************
 	var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
 	$("#header").prepend(formattedRole);
-	
+
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	$("#header").prepend(formattedName);
-	
+
 	var mobile = HTMLmobile.replace("%data%",bio.contacts["mobile"]);
 	$("#topContacts").append(mobile);
 
@@ -153,7 +165,7 @@ var professional = {
 
 	var github = HTMLgithub.replace("%data%",bio.contacts["github"]);
 	$("#topContacts").append(github);
-	
+
 	var loc = HTMLlocation.replace("%data%",bio.contacts["location"]);
 	$("#topContacts").append(loc);
 
@@ -162,14 +174,14 @@ var professional = {
 	//bio picture
 	var biopic =  HTMLbioPic.replace("%data%",bio.bioPic);
 	$("#header").append(biopic);
-	
+
 	//welcome message
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%",bio.welcomeMessage);
 	$("#header").append(formattedWelcomeMsg);
 
     //Skills
 	$("#header").append(HTMLskillsStart);
-	for(skill in bio.skills){	
+	for(skill in bio.skills){
 		var formattedSkills = HTMLskills.replace("%data%",bio.skills[skill]);
 		$("#skills").append(formattedSkills);
 	}
@@ -179,7 +191,7 @@ function inName(name){
 	console.log(name);
 	name[1] = name[1].toUpperCase();
 	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-	
+
 	return name[0] +" "+name[1];
 }
 
@@ -187,28 +199,28 @@ function displayWork() {
 //****************************************** Work Experience ****************************
 for (job in work.jobs) {
 	$("#workExperience").append(HTMLworkStart);
-	
+
 	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 	var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 	var formattedEmployerTitle = formattedEmployer + formattedTitle;
 	$(".work-entry:last").append(formattedEmployerTitle);
-	
+
 	var formattedDates = HTMLworkDates.replace("%data%",work.jobs[job].dates)
 	$(".work-entry:last").append(formattedDates);
-	
+
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description)
 	$(".work-entry:last").append(formattedDescription);
-	
-	
+
+
 }
-	
+
 //*************************************** Projects *************************************
 
 
 
 for (proj in projects.projects){
 	$("#projects").append(HTMLprojectStart);
-	
+
 	//var projectStart =  HTMLprojectStart.replace("%data%",projects.projects[proj]);
 	var projectTitle = HTMLprojectTitle.replace("%data%",projects.projects[proj].title);
 	projectTitle = projectTitle.replace("#",projects.projects[proj].link);
@@ -217,15 +229,15 @@ for (proj in projects.projects){
 	$(".project-entry:last").append(projectDates);
 	var projectDescription = HTMLprojectDescription.replace("%data%",projects.projects[proj].Description);
 	$(".project-entry:last").append(projectDescription);
-	
+
 	var projectImage = HTMLprojectImage.replace("%data%",projects.projects[proj].images[0]);
 	$(".project-entry:last").append(projectImage);
-	
+
 	if (projects.projects[proj].images[1]){
 	var projectImage = HTMLprojectImage.replace("%data%",projects.projects[proj].images[1]);
 	$(".project-entry:last").append(projectImage);
 	}
-	
+
 }
 
 
@@ -234,7 +246,7 @@ for (proj in projects.projects){
 
 for (school in education.schools){
 	$("#education").append(HTMLschoolStart);
-	
+
 	var schoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
 	$(".education-entry:last").append(schoolName);
 	var schoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -245,7 +257,7 @@ for (school in education.schools){
 	$(".education-entry:last").append(schoolLocation);
 	var schoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 	$(".education-entry:last").append(schoolMajor);
-	
+
 }
 
 
@@ -254,53 +266,53 @@ for (school in education.schools){
 for (certs in education.certificates){
 	$(".education-entry:last").append(HTMLonlineClasses);
 
-		
+
 	var onlineTitle = HTMLonlineTitle.replace("%data%", education.certificates[certs].title);
 	var onlineSchool = HTMLonlineSchool.replace("%data%", education.certificates[certs].school);
 
 	var formattedTitleSchool = onlineTitle + onlineSchool;
 	$(".education-entry:last").append(formattedTitleSchool);
-	
+
 	var onlineDates = HTMLonlineDates.replace("%data%", education.certificates[certs].dates);
 	$(".education-entry:last").append(onlineDates);
-	
+
 }
 
 	//$("#professional").append(HTMLprofDesignations);
-	
-  
+
+
 	$("#professional").append(HTMLprof);
-	
+
 	var formatOrg = HTMLorgName.replace("%data%", professional.designation["organization"]);
 	$(".professional-entry:last").append(formatOrg);
-	
+
 	//var formattedtype = HTMLtype.replace("%data%", "Exams");
 	//$(".professional-entry:last").append(formattedtype);
-	
+
 	//var formattedExam = HTMLExam.replace("%data%", professional.designation["exams"]);
 	//$(".professional-entry:last").append(formattedExam);
-	
+
 	var formattedExamp = HTMLExam1.replace("%data%", professional.designation["exam1"]);
 	$(".professional-entry:last").append(formattedExamp);
-	
+
 	var formattedExamfm = HTMLExam2.replace("%data%", professional.designation["exam2"]);
 	$(".professional-entry:last").append(formattedExamfm);
-	
-	
+
+
 
 //	$('#main').append(internationalizeButton);
 //	$("#mapDiv").append(googleMap);
-	
-	
+
+
 	//$("#header").prepend(formattedName);
-	
+
 	//var mobile = HTMLmobile.replace("%data%",bio.contacts["mobile"]);
 	$("#footerContacts").append(mobile);
 	var email = HTMLemail.replace("%data%",bio.contacts["email"]);
 	$("#footerContacts").append(email);
 	var github = HTMLgithub.replace("%data%",bio.contacts["github"]);
 	$("#footerContacts").append(github);
-	
+
 
 }
 
