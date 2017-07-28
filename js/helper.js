@@ -48,9 +48,11 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var HTMLprof = '<div class="professional-entry"></div>';
 var HTMLorgName = '<a href="#">%data%</a>';
+var HTMLorganName = '<a href="#">%data%</a>';
 //var HTMLtype = ' - %data%</a>';
 //var HTMLExam = '<em><br>Exam: %data%</em>';
 var HTMLExam1 = '<h4><em> %data%</em></h4>';
+var HTMLorgRole = '<h4><em> %data%</em></h4>';
 var HTMLExam2 = '<h4><em> %data%</em></h4>';
 
 
