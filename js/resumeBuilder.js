@@ -140,10 +140,10 @@ var professional = {
 			"exam1": "Exam P (Probability)",
 			"exam2": "Exam FM (Financial Mathematics)"
 		},
-		"Organization":
+	"organization":
 		{
 			"organization": "University of Washington Data Science Dept",
-			"Role": "Advisory Board Member"
+			"role": "Advisory Board Member"
 
 		}
 
@@ -286,17 +286,25 @@ for (certs in education.certificates){
 	var formatOrg = HTMLorgName.replace("%data%", professional.designation["organization"]);
 	$(".professional-entry:last").append(formatOrg);
 
+	var formattedExamp = HTMLExam1.replace("%data%", professional.designation["exam1"]);
+	$(".professional-entry:last").append(formattedExamp);
+
+	var formattedExamfm = HTMLExam2.replace("%data%", professional.designation["exam2"]);
+	$(".professional-entry:last").append(formattedExamfm);
+
+	var formatOrg = HTMLorganName.replace("%data%", professional.organization["organization"]);
+	$(".professional-entry:last").append(formatOrg);
+
+	var formatOrg = HTMLorgRole.replace("%data%", professional.organization["role"]);
+	$(".professional-entry:last").append(formatOrg);
+
 	//var formattedtype = HTMLtype.replace("%data%", "Exams");
 	//$(".professional-entry:last").append(formattedtype);
 
 	//var formattedExam = HTMLExam.replace("%data%", professional.designation["exams"]);
 	//$(".professional-entry:last").append(formattedExam);
 
-	var formattedExamp = HTMLExam1.replace("%data%", professional.designation["exam1"]);
-	$(".professional-entry:last").append(formattedExamp);
 
-	var formattedExamfm = HTMLExam2.replace("%data%", professional.designation["exam2"]);
-	$(".professional-entry:last").append(formattedExamfm);
 
 
 
