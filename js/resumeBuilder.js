@@ -4,7 +4,7 @@
 var bio = {
 
 	"name" : "Jonathan Alexander Brown",
-	"role" : "Risk Consultant",
+	"role" : "Portfolio Manager / Data Analyst",
 	"contacts" : {
 
 		"email" : "jabrown10@mail.usf.edu",
