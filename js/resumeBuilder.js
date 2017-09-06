@@ -4,7 +4,7 @@
 var bio = {
 
 	"name" : "Jonathan Alexander Brown",
-	"role" : "Portfolio Manager / Data Analyst",
+	"role" : "Portfolio Manager/Data Analyst",
 	"contacts" : {
 
 		"email" : "jabrown10@mail.usf.edu",
@@ -13,7 +13,7 @@ var bio = {
 	},
 	"welcomeMessage" : "",
 	"skills": [
-		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++/C#,Python,R, and VBA", "MS-SQL","GIS", "VCS:Git", "Full Stack Development(.Net and Django)", "Reinsurance Pricing","Catastrophe Modeling (RMS,AIR, and RQE)"
+		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++/C#,Python,R, and VBA", "MS-SQL","GIS", "VCS:Git", "Full Stack Development(.Net, Javascript/React.js, Python)", "Reinsurance Pricing","Catastrophe Modeling (RMS,AIR, and RQE)"
 	],
 	"bioPic" : "images/binary.gif"
 }
@@ -26,7 +26,7 @@ var work = {
 	"jobs": [
 		{
 			"employer": "Transatlantic Reinsurance Company(Headquarters)",
-			"title": "Data Analyst",
+			"title": "Portfolio Manager/Data Analyst",
 			"dates": "September 2016 - Present",
 			"description": "The Data Analyst role entails but is not limited to: Portfolio Management of the Corporate Global Catastrophe book. Quarterly reporting on and communicating the movement of the corporate porfolio to the Chief Risk Officer and Senior Underwriting management to all branches globally.  Be responsible for making sure any purchased Retrocession is appropriately applied and accounted for in the quarterly reporting results for the portfolio. Interfacing with the Capital Markets Department on ILS products we market to investors.  liaison with IT to secure support for technology used in the Global Catastrophe Dept. Deliver analytical insight to Underwriters about their book of business. Innovate or develop tools using advanced analytics(e.g predictive analytics, machine learning, software engineering etc...) that analyst or other stakeholders can leverage."
 		},
