@@ -13,7 +13,7 @@ var bio = {
 	},
 	"welcomeMessage" : "",
 	"skills": [
-		"Optimization", "Algorithm Design", "Statistics", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++/C#,Python,R, and VBA", "MS-SQL","GIS", "Full Stack Development(.Net and Django)", "Data visualization software(i.e Tableau, Power BI)", "Reinsurance Pricing","Catastrophe Modeling (RMS,AIR, and RQE)"
+		"Optimization", "Algorithm Design", "Problem-Solving","Software Development", "Predictive Analytics/Machine Learning", "Quantitative Equity Portfolio Management", "Catastrophe Risk Management", "C/C++/C#,Python,R, and VBA","GIS", "Full Stack Development(.Net and Django)", "Data visualization software(i.e Tableau, Power BI)", "Catastrophe Modeling (RMS,AIR, and RQE)"
 	],
 	"bioPic" : "images/binary.gif"
 }
